@@ -13,6 +13,7 @@ class Actor < ActiveRecord::Base
 #   - returns the total salary for an actor based on the salary for each of their
 #     roles
     def blockbusters
+        
     end
 # - `Actor#blockbusters`
 #   - returns a collection of all the `Movie` instances the actor has performed in

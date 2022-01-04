@@ -20,6 +20,7 @@ class Movie < ActiveRecord::Base
 #     (string), and a `salary` (integer) as arguments, and creates a new `role` in
 #     the database associated with this movie and the actor
     def self.all_credits
+        Movie.all.map["{self.actor.name}: Played by {self.actor.name}", "{self.character.name}: Played by {self.actor.name}", ...]
     end
 #     `Movie#all_credits`
 #   should return an Array of strings with all the roles for this movie
