@@ -20,12 +20,14 @@ sporty_spice = Actor.create(name: "Melanie Chisholm")
 posh_spice = Actor.create(name: "Victoria Addams")
 
 puts "Creating roles..."
-r1 = Role.create(
+7.times do 
+    Role.create(
     salary: 129_000_000, 
     character_name: "Lindsay Lohan", 
-    movie_id: mean_girls, 
-    actor_id: lindsay_lohan
-)
+    movie_id: Movie.all.sample.id, 
+    actor_id: Actor.all.sample.id
+    )
+end
 # ***********************************************************
 # * TODO: create roles! Remember, a role belongs to a movie *
 # * and a role belongs to an actor.                         *
